@@ -22,6 +22,13 @@ import { LocalStorageComponent } from './local-storage/local-storage.component';
 import { LocalChild1Component } from './local-storage/local-child1/local-child1.component';
 import { LocalChild2Component } from './local-storage/local-child2/local-child2.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { TestNgOnChangesComponent } from './test-ng-on-changes/test-ng-on-changes.component';
+import { Child4Component } from './test-ng-on-changes/child4/child4.component';
+import { FatherComponent } from './father/father.component';
+import { Child5Component } from './father/child5/child5.component';
+import { ParentComponent } from './parent/parent.component';
+import { Child6Component } from './parent/child6/child6.component';
+import { Child7Component } from './parent/child7/child7.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +50,14 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     LocalStorageComponent,
     LocalChild1Component,
     LocalChild2Component,
-    LifeCycleComponent
+    LifeCycleComponent,
+    TestNgOnChangesComponent,
+    Child4Component,
+    FatherComponent,
+    Child5Component,
+    ParentComponent,
+    Child6Component,
+    Child7Component
   ],
   imports: [
     BrowserModule,
