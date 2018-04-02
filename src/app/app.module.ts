@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+
 
 import { AppComponent } from './app.component';
 import { TestValueBindComponent } from './test-value-bind/test-value-bind.component';
@@ -29,6 +31,7 @@ import { Child5Component } from './father/child5/child5.component';
 import { ParentComponent } from './parent/parent.component';
 import { Child6Component } from './parent/child6/child6.component';
 import { Child7Component } from './parent/child7/child7.component';
+import { TestFlyInComponent } from './test-fly-in/test-fly-in.component';
 
 @NgModule({
   declarations: [
@@ -57,11 +60,13 @@ import { Child7Component } from './parent/child7/child7.component';
     Child5Component,
     ParentComponent,
     Child6Component,
-    Child7Component
+    Child7Component,
+    TestFlyInComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule 
+    FormsModule ,
+    BrowserAnimationsModule
   ],
   providers: [EventBusService],
   bootstrap: [AppComponent]
