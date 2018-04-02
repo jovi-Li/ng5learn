@@ -32,6 +32,8 @@ import { ParentComponent } from './parent/parent.component';
 import { Child6Component } from './parent/child6/child6.component';
 import { Child7Component } from './parent/child7/child7.component';
 import { TestFlyInComponent } from './test-fly-in/test-fly-in.component';
+import { DynamicCompComponent } from './dynamic-comp/dynamic-comp.component';
+import { Child8Component } from './dynamic-comp/child8/child8.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { TestFlyInComponent } from './test-fly-in/test-fly-in.component';
     ParentComponent,
     Child6Component,
     Child7Component,
-    TestFlyInComponent
+    TestFlyInComponent,
+    DynamicCompComponent,
+    Child8Component
   ],
   imports: [
     BrowserModule,
@@ -69,6 +73,7 @@ import { TestFlyInComponent } from './test-fly-in/test-fly-in.component';
     BrowserAnimationsModule
   ],
   providers: [EventBusService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[Child8Component]
 })
 export class AppModule { }
